@@ -1,0 +1,270 @@
+/* Make the logo image circular */
+#logo {
+    /* Rounds the corners of the logo image to create a circular shape */
+    border-radius: 50%;
+    /* Sets the width of the logo image to 100px */
+    width: 100px;
+    /* Centers the logo image horizontally */
+    margin: auto;
+    /* Adds padding to the logo image */
+    padding: 10px 10px 10px 0px ;
+}
+
+/* Position the buttons on the right side */
+#btn {
+    /* Displays the buttons as a flex container */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -110px;
+    margin-right: 20px;
+}
+
+/* Center the recipe section */
+#recipe {
+    /* Centers the recipe section horizontally */
+    margin: 0 auto;
+}
+
+/* Styling for buttons */
+.buttons {
+    margin-right: 10px;
+    /* Rounds the corners of the buttons */
+    border-radius: 10px;
+    background: #333333;
+    /* Justifies the buttons horizontally */
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    /* Centers the buttons vertically */
+    align-items: center;
+    /* Adds a box shadow to the buttons */
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    /* Sets the cursor to a pointer when hovered over the buttons */
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: rgb(242, 242, 242);
+    /* Adds a transition effect to the buttons */
+    transition: 500ms;
+}
+
+/* Styling for buttons on hover */
+.buttons:hover {
+    /* Changes the box shadow of the buttons on hover */
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    /* Changes the color of the buttons on hover */
+    color: #d6d6d6;
+    /* Adds a transition effect to the buttons on hover */
+    transition: 500ms;
+}
+
+/* Center the title */
+#title {
+    /* Centers the title horizontally */
+    text-align: center;
+    margin-top: -85px;
+    font-size: 70px;
+}
+
+/* Make the header permanent */
+header {
+    /* Sets the position of the header to fixed */
+    position: fixed;
+    /* Sets the top and left positions of the header to 0 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: antiquewhite;
+}
+
+/* Styling for info section */
+#info {
+    /* Centers the info section horizontally */
+    margin: auto;
+    /* Sets the top margin of the info section to -690px */
+    margin-top: -690px;
+    /* Sets the font size of the info section to 30px */
+    font-size: 30px;
+    /* Sets the width of the info section to 600px */
+    width: 600px;
+}
+
+/* Styling for intro section */
+#intro {
+    /* Centers the intro section horizontally */
+    margin: -10px auto;
+    font-size: 30px;
+    width: 200px;
+    border-radius: 50px;
+    color: #ffffff;
+    /* Sets the cursor to a pointer when hovered over the intro section */
+    cursor: pointer;
+    /* Adds a transition effect to the intro section */
+   transition: all 0.3s ease;
+    /* Positions the intro section relative to its parent container */
+    position: relative;
+    /* Displays the intro section as an inline block element */
+    display: inline-block;
+    /* Adds a box shadow to the intro section */
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),7px 7px 20px 0px rgba(0,0,0,.1),4px 4px 5px 0px rgba(0,0,0,.1);
+    /* Removes the outline of the intro section */
+    outline: none;
+    /* Sets the background of the intro section to a linear gradient */
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    /* Removes the border of the intro section */
+    border: none;
+}
+
+/* Styling for intro section on hover */
+#intro:hover {
+    /* Adds a box shadow to the intro section on hover */
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+/* Styling for div1 section */
+#div1 {
+    /* Sets the top margin of the div1 section to 500px */
+    margin-top: 500px;
+}
+
+/* Styling for txt1 section */
+#txt1 {
+    /* Sets the font size of the txt1 section to 50px */
+    font-size: 50px;
+    /* Centers the txt1 section horizontally */
+    text-align: center;
+}
+
+/* Styling for txt2 section */
+#txt2 {
+    /* Sets the font size of the txt2 section to 30px */
+    font-size: 30px;
+}
+
+/* Styling for beef section */
+#beef {
+    /* Sets the width of the beef section to 400px */
+    width: 400px;
+}
+
+/* Styling for img1 section */
+#img1 {
+    margin-left: 100px;
+}
+
+/* Styling for pizza section */
+#pizza {
+    /* Sets the width of the pizza section to 400px */
+    width: 400px;
+}
+
+/* Styling for img2 section */
+#img2 {
+    margin-left: 750px;
+    margin-top: -290px;
+}
+
+/* Styling for carbonara section */
+#carbonara {
+    /* Sets the width of the carbonara section to 400px */
+    width: 400px;
+}
+
+/* Styling for img3 section */
+#img3 {
+
+    margin-left: 1300px;
+    margin-top: -330px;
+}
+
+
+#person{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    position: relative;
+    margin: 100px;
+
+}
+
+#person::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    background-color: gray;
+    top: 22px;
+    left: -10px;
+    border-radius: 50% 50% 0% 0%;
+}
+
+#main{
+    background-color: antiquewhite;
+    margin-top: 300px;
+    width: 400px;
+    margin: 200px auto;
+    font-size: 25px;
+    height: 400px;
+    background-size: 400px 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.email{
+    margin-top: -800px;
+    padding: 20px;
+    
+}
+
+.email::placeholder{
+    font-size: 20px;
+}
+.password{
+    padding: 20px
+}
+.login{
+    margin: auto;
+    display: flex;    
+}
+
+#signup{
+   margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+#forgot{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 40px;   
+}
+
+
+.pas{
+    width: 300px;
+}
+
+
+#loginimg{
+    margin-top: 80px;
+    opacity: 0.5;
+    height: 819px;
+    width: 1910px;
+
+}
+
+
+
+
+
+
+
+
+
+
